@@ -4,7 +4,7 @@
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr,"Usage: program <number>\n");
-        return 1;
+        return(1);
     }
     
     int number = atoi(argv[1]); //Convert the console input argument to an integer
@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
     }
     else
     {
-        printf("%d no es número primo\n",number);
+        printf("%d is not a prime number\n",number);
     }
     
     return 0;
